@@ -1,6 +1,6 @@
 # LLM-Based Automation Agent
 
-# PLEASE NOTE : In the format of <dockerhub-username>/<repository-name>:<tag>, my image can be found in namitabhatt/llm-automation-agent:latest!
+# PLEASE NOTE : In the format of dockerhub-username/repository-name:tag, my image can be found in namitabhatt/llm-automation-agent:latest!
 
 This project is an automation agent that uses a Large Language Model (LLM) to perform various tasks, such as file manipulation, data extraction, and more. It exposes an API with two endpoints: `/run` to execute tasks and `/read` to read files.
 
