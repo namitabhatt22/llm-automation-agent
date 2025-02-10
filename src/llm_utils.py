@@ -27,3 +27,12 @@ def query_llm(prompt, image=None):
         return f"OpenAI API error: {str(e)}"
     except Exception as e:
         return f"Unexpected error: {str(e)}"
+
+
+def query_llm(prompt):
+    openai.api_key = os.getenv("AIPROXY_TOKEN")
+    response = openai.ChatCompletion.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response["choices"][0]["message"]["content"].strip()
